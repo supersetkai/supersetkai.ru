@@ -1,0 +1,12 @@
+{
+    "Designation": {
+        "Logo": "/media/logo/cropped.png",
+        "Link": "/",
+        "Name": "Superset"
+    },
+    "Links": {
+        "Проекты": "/projects",
+        "Гитхаб": "https://github.com/KAI-Superset",
+        "О нас": "/about-us"
+    }
+}

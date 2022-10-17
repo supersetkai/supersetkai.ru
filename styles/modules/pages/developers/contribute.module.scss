@@ -1,0 +1,45 @@
+@import "../../../colors";
+
+#landingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-position: center;
+
+    width: 100%;
+    height: 100vh;
+
+    #card {
+        position: relative;
+        width: 30%;
+        box-shadow: 3rem 0 7rem 6rem $black;
+    }
+
+    #text {
+        * {
+            line-height: 1.25;
+        }
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #landingContainer {
+        flex-direction: column;
+        align-items: start;
+
+        padding: 6%;
+
+        #card {
+            order: 2;
+            width: 21rem;
+            margin-top: 2rem;
+            box-shadow: 0 -2rem 7rem 6rem $black;
+        }
+
+        #text {
+            padding: 0;
+        }
+    }
+}

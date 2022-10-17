@@ -1,0 +1,86 @@
+@import "../colors";
+
+header {
+    display: flex !important;
+    padding: 15px 10%;
+    backdrop-filter: brightness(40%) blur(15px);
+    filter: drop-shadow(0 0 0.75rem $black);
+    border-bottom: 1px solid $pre-gray;
+
+    overflow: hidden;
+
+    transition: all .5s ease-in-out;
+
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    .links {
+        a {
+            text-decoration: none;
+            padding: 15px;
+            margin-left: 18px;
+            font-size: 16px;
+
+            font-weight: 700;
+
+            color: $light-gray;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    * {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #logo {
+        height: min-content;
+        img {
+            width: auto !important;
+            &:hover {
+                filter: brightness(130%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        justify-content: space-between;
+        height: 80px;
+
+        backdrop-filter: none;
+        filter: none;
+        background-color: #000000D9;
+
+        .links {
+            position: absolute;
+            flex-direction: column;
+            top: 70px;
+            right: 0;
+            left: 0;
+            padding: 20px;
+            a {
+                margin-left: 0;
+                padding: 5px;
+            }
+        }
+        
+        #menu {
+            display: flex;
+            margin: 8px;
+        }
+
+        &.active {
+            height: 230px;
+        }
+    }
+}

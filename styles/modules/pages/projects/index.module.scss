@@ -1,0 +1,78 @@
+@import "../../../colors";
+
+#land {
+
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    .projects {
+        display: flex;
+        margin: 0 -1rem;
+
+        .card {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .showCase {
+
+            pre {
+                box-shadow: 3rem 0 1rem -1rem $black inset;
+
+            }
+
+            & > span {
+                box-shadow: 3rem 0 1rem -1rem $black inset;
+
+                img {
+                    position: relative;
+                    z-index: -1;
+                }
+            }
+        }
+
+        &:nth-child(3n) .showCase {
+        
+            pre {
+                box-shadow: -3rem 0 1rem -1rem $black inset;
+            }
+    
+            & > span {
+                box-shadow: -3rem 0 1rem -1rem $black inset;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .projects {
+        flex-direction: column;
+
+        .showCase {
+            margin: 2rem 0;
+        }
+
+        .showCase {
+            pre {
+                box-shadow: 0 3rem 1rem -1rem $black inset !important;
+            }
+    
+            & > span {
+                box-shadow: 0 3rem 1rem -1rem $black inset !important;
+            }
+        }
+
+        &:nth-child(3n) .showCase {
+        
+            pre {
+                box-shadow: 0 -3rem 1rem -1rem $black inset !important;
+            }
+    
+            & > span {
+                box-shadow: 0 -3rem 1rem -1rem $black inset !important;
+            }
+        }
+    }
+}

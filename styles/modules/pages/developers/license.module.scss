@@ -1,0 +1,21 @@
+#license {
+    white-space: pre-line;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #container {
+        padding: 6rem 2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #container {
+        padding: 6rem 1rem;
+    }
+}

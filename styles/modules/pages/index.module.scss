@@ -1,0 +1,75 @@
+@import '../../colors';
+
+#landingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+    background-position: center;
+
+    width: 100%;
+    height: 100vh;
+
+    // padding-top: 16rem;
+
+    & > * {
+        margin: 1rem;
+    }
+
+    .grid {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #landingContainer > div:first-child {
+        margin-right: 0 !important;
+        margin-bottom: 5rem;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .gridCol {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #landingContainer {
+        box-sizing: border-box;
+
+        img {
+            display: none;
+        }
+    }
+
+    .grid {
+        width: 90% !important;
+
+        .gridCol {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) {
+    #landingContainer {
+        justify-content: start;
+
+        height: max-content;
+
+        padding-top: 6rem;
+    }
+}
+
+@media screen and (max-height: 800px) and (max-width: 1300px) {
+    #landingContainer {
+        justify-content: start;
+
+        height: max-content;
+
+        padding-top: 6rem;
+    }
+}

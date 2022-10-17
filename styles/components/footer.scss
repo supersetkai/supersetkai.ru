@@ -1,0 +1,75 @@
+@import "../colors";
+
+footer {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: $black;
+    border-top: 1px solid $pre-gray;
+    padding: 50px 10%;
+
+    color: $white;
+
+    #primary-footer {
+        max-width: 1500px;
+        width: 100%;
+
+        section {
+            float: left;
+            width: 25%;
+
+            h4 {
+                color: $pre-white;
+            }
+            
+            ul {
+                padding: 0;
+    
+                li {
+                    list-style: none;
+    
+                    a {
+                        text-decoration: none;
+                        color: $light-gray;
+                        line-height: 1.5;
+                        &:hover {
+                            text-decoration: underline;
+                            color: $pre-white;
+                        }
+                    }
+                }
+            }
+        }
+        &::after {
+            clear: both;
+            content: "";
+            display: block;
+            height: 60px;
+            border-bottom: 1px solid $pre-gray;
+            margin-bottom: 60px;
+        }
+    }
+
+    #secondary-footer {
+        max-width: 1200px;
+        color: $pre-white;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 800px) {
+    footer section {
+        width: 50% !important;
+        &:nth-child(2n+1) {
+            clear: left;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 440px) {
+    footer section {
+        clear: left;
+        width: 100% !important;
+    }
+}

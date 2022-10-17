@@ -1,0 +1,82 @@
+{
+    "projects": [
+        {
+            "name": "Node.js враппер API",
+            "content": "kai.js - это маленький современный враппер АПИ вебсайта КНИТУ-КАИ написанный на Node.js. Враппер использует библиотеку axios для отправки запросов на сервер.",
+            "buttons": [
+                {
+                    "content": "Узнать больше",
+                    "link": "/",
+                    "color": "blue"
+                },
+                {
+                    "content": "Гитхаб",
+                    "link": "/",
+                    "color": "blue"
+                },
+                {
+                    "content": "NPM",
+                    "link": "https://npmjs.com/package/kai.js",
+                    "color": "blue"
+                }
+            ],
+            "showCase": {
+                "type": "code",
+                "code": {
+                    "language": "ts",
+                    "content": "import { Schedule, ScheduleInterface } from 'kai.js';\n\nconst schedule: ScheduleInterface = new Schedule();\n\nasync function getScheduleOfMyGroup() {\n    return await schedule.getSchedule(4131);\n}\n\ngetScheduleOfMyGroup().then((schedule) => {\n    console.log(schedule);\n});"
+                }
+            }
+        },
+        {
+            "name": "Дискорд бот",
+            "content": "Лёгкий в использовании бот созданный для поддержки студентов использующих Дискорд на ежедневной основе.",
+            "buttons": [
+                {
+                    "content": "Узнать больше",
+                    "link": "/",
+                    "color": "indigo"
+                },
+                {
+                    "content": "Гитхаб",
+                    "link": "/",
+                    "color": "indigo"
+                }
+            ],
+            "showCase": {
+                "type": "image",
+                "image": {
+                    "source": "/media/pages/projects/discordBot.png",
+                    "alt": "Дискорд бот",
+                    "width": 600,
+                    "height": 400
+                }
+            }
+        },
+        {
+            "name": "Официальный вебсайт",
+            "content": "Вебсайт Суперсета это не только введение в экосистему и её документация, но также собственный РЕСТфул АПИ.",
+            "buttons": [
+                {
+                    "content": "Документация",
+                    "link": "/",
+                    "color": "violet"
+                },
+                {
+                    "content": "Гитхаб",
+                    "link": "/",
+                    "color": "violet"
+                }
+            ],
+            "showCase": {
+                "type": "image",
+                "image": {
+                    "source": "/media/pages/projects/supersetPkaiMe.png",
+                    "alt": "superset.pkai.me",
+                    "width": 600,
+                    "height": 400
+                }
+            }
+        }
+    ]
+}

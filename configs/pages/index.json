@@ -1,0 +1,65 @@
+{
+    "cards": [
+        {
+            "name": "Враппер АПИ",
+            "content": "kai.js - это маленький современный враппер АПИ вебсайта КНИТУ-КАИ написанный на Node.js.",
+            "badge": {
+                "show": true,
+                "content": "Поддержка TS",
+                "color": "blue"
+            },
+            "buttons": [
+                {
+                    "content": "NPM",
+                    "color": "blue",
+                    "link": "https://npmjs.com/package/kai.js",
+                    "fullWidth": false,
+                    "arrow": false
+                },
+                {
+                    "content": "Читать далее",
+                    "color": "blue",
+                    "link": "/projects/kai.js",
+                    "fullWidth": true,
+                    "arrow": true
+                }
+            ]
+        },
+        {
+            "name": "Дискорд бот",
+            "content": "Лёгкий в использовании бот созданный для поддержки студентов использующих Дискорд на ежедневной основе.",
+            "badge": {
+                "show": true,
+                "content": "discord.js v14",
+                "color": "indigo"
+            },
+            "buttons": [
+                {
+                    "content": "Читать далее",
+                    "color": "indigo",
+                    "link": "/projects/discord-bot",
+                    "fullWidth": true,
+                    "arrow": true
+                }
+            ]
+        },
+        {
+            "name": "Официальный вебсайт",
+            "content": "Вебсайт Суперсета это не только введение в экосистему и её документация, но также собственный РЕСТфул АПИ.",
+            "badge": {
+                "show": false,
+                "content": "",
+                "color": ""
+            },
+            "buttons": [
+                {
+                    "content": "Читать далее",
+                    "color": "violet",
+                    "link": "/projects/superset.pkai.me",
+                    "fullWidth": true,
+                    "arrow": true
+                }
+            ]
+        }
+    ]
+}

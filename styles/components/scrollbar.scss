@@ -1,0 +1,16 @@
+@import "../colors";
+
+html {
+    scrollbar-color: $gray $black;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $gray;
+}
+::-webkit-scrollbar-track {
+    background-color: $black;
+}

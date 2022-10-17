@@ -1,0 +1,28 @@
+{
+    "Information": "Контент доступен по лицензии GNU General Public License v3.0.",
+    "Sections": {
+        "Проекты": {
+            "Node.js враппер API": "/projects/kai.js",
+            "Дискорд бот": "/projects/discord-bot",
+            "Вебсайт Superset": "/projects/superset.pkai.me"
+        },
+        "Для разработчиков": {
+            "Репозиторий вебсайта": "https://github.com/KAI-Superset/superset.pkai.me",
+            "Документация": "/developers/docs",
+            "Помощь в развитии проекта": "/developers/contribute",
+            "Лицензия": "/developers/license"
+        },
+        "Соц. сети": {
+            "Инстаграм": "/",
+            "Телеграм": "/",
+            "Твиттер": "/",
+            "Вконтакте": "/"
+        },
+        "Другое": {
+            "Вебсайт КНИТУ-КАИ": "https://kai.ru",
+            "Группа Вконтакте КНИТУ-КАИ": "https://vk.com/kaiknitu",
+            "Группа Вконтакте КИТ КАИ": "https://vk.com/kai_kit",
+            "Брендбук Суперсет": "/brandbook"
+        }
+    }
+}
