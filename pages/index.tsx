@@ -65,13 +65,9 @@ function CardGen(props: any) {
 }
 
 function Buttons(props: any) {
-    let buttons: any = [];
-
-    props.item.forEach((button: any) => {
-        buttons.push((
-            <ButtonGen item={button} key={button.content} />
-        ));
-    });
+    const buttons = props.item.map((button: any) => (
+        <ButtonGen item={button} key={button.content} />
+    ));
 
     return (
         <Button.Group>
@@ -81,15 +77,11 @@ function Buttons(props: any) {
 }
 
 function Cards() {
-    let cards: any = [];
-
-    indexConfig.cards.forEach(item => {
-        cards.push((
-            <Grid.Col span={1} key={item.name} className={styles.gridCol}>
-                <CardGen item={item}/>
-            </Grid.Col>
-        ));
-    });
+    const cards = indexConfig.cards.map(item => (
+        <Grid.Col span={1} key={item.name} className={styles.gridCol}>
+            <CardGen item={item}/>
+        </Grid.Col>
+    ));
 
     return (
         <Grid columns={3} grow className={styles.grid}>

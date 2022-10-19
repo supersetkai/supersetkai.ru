@@ -22,6 +22,16 @@
     }
 }
 
+@media screen and (min-width: 1800px) {
+    .grid {
+        justify-content: center;
+
+        .gridCol {
+            max-width: 400px;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px) {
     #landingContainer > div:first-child {
         margin-right: 0 !important;

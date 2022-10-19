@@ -1,11 +1,11 @@
 // Components
 // Компоненты
-import { AppProps } from 'next/app';
-import { NotificationsProvider } from '@mantine/notifications';
-import { MantineProvider } from '@mantine/core';
-import Router from "next/router";
-import Head from 'next/head';
-import Layout from '../components/layout';
+import { AppProps } from "next/app";
+import { NotificationsProvider } from "@mantine/notifications";
+import { MantineProvider } from "@mantine/core";
+import { RouterTransition } from "../components/transition";
+import Head from "next/head";
+import Layout from "../components/layout";
 
 // SCSS/SASS
 import '../styles/components/footer.scss';
@@ -13,14 +13,6 @@ import '../styles/components/header.scss';
 import '../styles/components/layout.scss';
 import '../styles/components/scrollbar.scss';
 import '../styles/components/selection.scss';
-
-// NProgress
-import NProgress from "nprogress";
-
-//Binding events.
-Router.events.on("routeChangeStart", () => NProgress.start());
-Router.events.on("routeChangeComplete", () => NProgress.done());
-Router.events.on("routeChangeError", () => NProgress.done());
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -45,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             withGlobalStyles
             withNormalizeCSS
         >
+            <RouterTransition />
             <NotificationsProvider>
                 <Head>
                     <title>KAI Superset</title>

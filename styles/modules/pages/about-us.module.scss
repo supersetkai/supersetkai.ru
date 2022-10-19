@@ -1,0 +1,32 @@
+#container {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    #avatars {
+        display: flex;
+        align-items: center;
+        #title {
+            margin-right: 3rem;
+        }
+    }
+
+    #table {
+        tr {
+            td {
+                padding: 16px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #avatars {
+        flex-direction: column;
+        align-items: flex-start !important;
+
+        #title {
+            margin-right: 0;
+        }
+    }
+}

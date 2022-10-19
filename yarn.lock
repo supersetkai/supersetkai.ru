@@ -297,6 +297,13 @@
     "@mantine/utils" "5.5.5"
     react-transition-group "4.4.2"
 
+"@mantine/nprogress@^5.5.6":
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/@mantine/nprogress/-/nprogress-5.5.6.tgz#d4477dfc6aa1bfbcf671b33b018f64db422cda11"
+  integrity sha512-NAki9+cyY27JzYMnD6nt9NJKucI2c3pO8isZ6nnq5CAxg1aFThX7Jz6CAAgbvmOUyxIH3x0d2kv6ZmrmlqIYfQ==
+  dependencies:
+    "@mantine/utils" "5.5.6"
+
 "@mantine/prism@^5.5.5":
   version "5.5.5"
   resolved "https://registry.yarnpkg.com/@mantine/prism/-/prism-5.5.5.tgz#310a084d6efefb2543d768fd1b95a55fff663e4d"
@@ -325,6 +332,11 @@
   version "5.5.5"
   resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.5.5.tgz#22b412b6e9d78f2515f9f98db3f5ed83deca91ca"
   integrity sha512-nt8+A0N1cV4cJNqlKuXazShoEwqtLohHNKFuywEdF3B6vHWdbY799PbT2WmqGTwNQ+se8y5/nBMmamBZrUN4fg==
+
+"@mantine/utils@5.5.6":
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.5.6.tgz#769fce79028ac6842b15753e0e9c16480be0b585"
+  integrity sha512-uEeMwTPmt7HMdtdbu7pZQ3en5F3Dj7cavhWGRcokj7PluuzNM+79iR/g4bJ3C4SKhj5LdHi7KjX8+zp6GKyrBg==
 
 "@mui/base@5.0.0-alpha.101":
   version "5.0.0-alpha.101"
@@ -794,11 +806,6 @@
   integrity sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==
   dependencies:
     tslib "^2.4.0"
-
-"@tabler/icons@^1.104.0":
-  version "1.104.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.104.0.tgz#58cc09d9e11617b1d124b48300831991f74659bf"
-  integrity sha512-5AOrHjay37RmpxLpo/Cm4sHCEWuPG/pBFqJE2d4JvILXKwFa4ROTlH6G9bnAZ+yGttEW8KF0DuIKLNgvcI78Ww==
 
 "@tootallnate/once@2":
   version "2.0.0"

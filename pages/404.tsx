@@ -1,7 +1,7 @@
 // Components
 // Компоненты
 import { useMediaQuery } from "@mantine/hooks";
-import { Text, Container, Divider, Space } from "@mantine/core";
+import { Text, Container, Divider } from "@mantine/core";
 
 export default function NotFound() {
 
@@ -49,7 +49,6 @@ export default function NotFound() {
                     МЫ НИЧЕГО<br />
                     НЕ НАШЛИ!
                 </Text>
-                <Space h={40} />
                 <Divider
                     my="sm"
                     color="dimmed"
@@ -57,6 +56,7 @@ export default function NotFound() {
                         borderImageSource: "linear-gradient(90deg, black 0%, white 100%)",
                         borderImageSlice: 1,
                     }}
+                    mt={40}
                 />
             </Container>
         </Container>

@@ -16,13 +16,9 @@ function ButtonGen(props: any) {
 }
 
 function Buttons(props: any) {
-    let buttons: any = [];
-
-    props.item.forEach((button: any) => {
-        buttons.push((
-            <ButtonGen item={button} key={button.content} />
-        ));
-    });
+    const buttons = props.item.map((button: any) => (
+        <ButtonGen item={button} key={button.content} />
+    ));
 
     return (
         <Button.Group>
@@ -88,19 +84,15 @@ function ProjectGen(props: any) {
 }
 
 function Projects() {
-    let projects: any = [];
 
-    indexConfig.projects.forEach(item => {
-        projects.push((
+    const projects = indexConfig.projects.map(item => (
+        <>
             <ProjectGen item={item} key={item.name} />
-        ));
-
-        if (indexConfig.projects.indexOf(item) === indexConfig.projects.length - 1) return;
-
-        projects.push((
-            <Divider my="sm" mt={60} mb={60} />
-        ))
-    });
+            {(indexConfig.projects.indexOf(item) !== indexConfig.projects.length - 1) ? (
+                <Divider my={1} mt={60} mb={60} />
+            ) : ""}
+        </>
+    ));
 
 
     return (
