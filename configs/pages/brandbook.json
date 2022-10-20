@@ -1,0 +1,38 @@
+[
+    {
+        "src": {
+            "png": "/media/logo/superset-text.png",
+            "psd": "/media/logo/superset-text.psd",
+            "kra": "/media/logo/superset-text.kra"
+        },
+        "alt": "Текст «Суперсет»",
+        "span": 5
+    },
+    {
+        "src": {
+            "png": "/media/logo/superset-logo.png",
+            "psd": "/media/logo/superset-logo.psd",
+            "kra": "/media/logo/superset-logo.kra"
+        },
+        "alt": "Логотип «Суперсет»",
+        "span": 6
+    },
+    {
+        "src": {
+            "png": "/media/logo/superset-blue-logo.png",
+            "psd": "/media/logo/superset-blue-logo.psd",
+            "kra": "/media/logo/superset-blue-logo.kra"
+        },
+        "alt": "Синий логотип «Суперсет»",
+        "span": 6
+    },
+    {
+        "src": {
+            "png": "/media/logo/superset-blue-text.png",
+            "psd": "/media/logo/superset-blue-text.psd",
+            "kra": "/media/logo/superset-blue-text.kra"
+        },
+        "alt": "Синий текст «Суперсет»",
+        "span": 5
+    }
+]

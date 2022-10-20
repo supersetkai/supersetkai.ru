@@ -8,7 +8,7 @@ import Image from "next/future/image";
 
 import indexConfig from "../configs/pages/index.json";
 
-import text from "../public/media/logo/text.png";
+import text from "../public/media/logo/superset-text.png";
 
 if (typeof window != 'undefined') {
     setTimeout(() => showNotification({

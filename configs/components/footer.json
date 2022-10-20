@@ -7,16 +7,16 @@
             "Вебсайт Superset": "/projects/superset.pkai.me"
         },
         "Для разработчиков": {
-            "Репозиторий вебсайта": "https://github.com/KAI-Superset/superset.pkai.me",
+            "Репозиторий вебсайта": "https://github.com/KAI-Superset/supersetkai.ru",
             "Документация": "/developers/docs",
             "Помощь в развитии проекта": "/developers/contribute",
             "Лицензия": "/developers/license"
         },
         "Соц. сети": {
             "Инстаграм": "/",
-            "Телеграм": "/",
+            "Телеграм": "https://t.me/supersetkai",
             "Твиттер": "/",
-            "Вконтакте": "/"
+            "Вконтакте": "https://vk.com/supersetkai"
         },
         "Другое": {
             "Вебсайт КНИТУ-КАИ": "https://kai.ru",

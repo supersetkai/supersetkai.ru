@@ -304,12 +304,12 @@
   dependencies:
     "@mantine/utils" "5.5.6"
 
-"@mantine/prism@^5.5.5":
-  version "5.5.5"
-  resolved "https://registry.yarnpkg.com/@mantine/prism/-/prism-5.5.5.tgz#310a084d6efefb2543d768fd1b95a55fff663e4d"
-  integrity sha512-MH04InQOeRHRV3W1CQbMac8gtG+7/L95vxkf6hVgCl5RkK4dSXI/5OH1Sr1l1hWoAni03BwaaC5WCq3dHNvnVg==
+"@mantine/prism@^5.5.6":
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/@mantine/prism/-/prism-5.5.6.tgz#b88fc0199a295265983b8ff28471a0e3d12ff3eb"
+  integrity sha512-bAGu9XSS8r8xFvwJiF4kjUX0IpIrSQS6hmMVR2r/N64ILjDvbKJaijH1djqFoC2E2WTd2SyItdLLKtFonB9rBQ==
   dependencies:
-    "@mantine/utils" "5.5.5"
+    "@mantine/utils" "5.5.6"
     prism-react-renderer "^1.2.1"
 
 "@mantine/ssr@5.5.5":
@@ -3203,11 +3203,6 @@ npmlog@^6.0.0, npmlog@^6.0.2:
     console-control-strings "^1.1.0"
     gauge "^4.0.3"
     set-blocking "^2.0.0"
-
-nprogress@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
-  integrity sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==
 
 object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
