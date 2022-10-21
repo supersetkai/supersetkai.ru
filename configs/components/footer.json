@@ -4,10 +4,10 @@
         "Проекты": {
             "Node.js враппер API": "/projects/kai.js",
             "Дискорд бот": "/projects/discord-bot",
-            "Вебсайт Superset": "/projects/superset.pkai.me"
+            "Вебсайт Superset": "/projects/supersetkai.ru"
         },
         "Для разработчиков": {
-            "Репозиторий вебсайта": "https://github.com/KAI-Superset/supersetkai.ru",
+            "Репозиторий вебсайта": "https://github.com/supersetkai/supersetkai.ru",
             "Документация": "/developers/docs",
             "Помощь в развитии проекта": "/developers/contribute",
             "Лицензия": "/developers/license"

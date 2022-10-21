@@ -6,12 +6,12 @@
             "buttons": [
                 {
                     "content": "Узнать больше",
-                    "link": "/",
+                    "link": "/projects/kai.js",
                     "color": "blue"
                 },
                 {
                     "content": "Гитхаб",
-                    "link": "/",
+                    "link": "https://github.com/supersetkai/kai.js",
                     "color": "blue"
                 },
                 {
@@ -34,19 +34,19 @@
             "buttons": [
                 {
                     "content": "Узнать больше",
-                    "link": "/",
+                    "link": "/projects/discord-bot",
                     "color": "indigo"
                 },
                 {
                     "content": "Гитхаб",
-                    "link": "/",
+                    "link": "https://github.com/supersetkai/discord-bot",
                     "color": "indigo"
                 }
             ],
             "showCase": {
                 "type": "image",
                 "image": {
-                    "source": "/media/pages/projects/discordBot.png",
+                    "source": "/media/pages/projects/discord-bot.png",
                     "alt": "Дискорд бот",
                     "width": 600,
                     "height": 400
@@ -59,20 +59,20 @@
             "buttons": [
                 {
                     "content": "Документация",
-                    "link": "/",
+                    "link": "/developers/docs",
                     "color": "violet"
                 },
                 {
                     "content": "Гитхаб",
-                    "link": "/",
+                    "link": "https://github.com/supersetkai/supersetkai.ru",
                     "color": "violet"
                 }
             ],
             "showCase": {
                 "type": "image",
                 "image": {
-                    "source": "/media/pages/projects/supersetPkaiMe.png",
-                    "alt": "superset.pkai.me",
+                    "source": "/media/pages/projects/supersetkai.ru.png",
+                    "alt": "supersetkai.ru",
                     "width": 600,
                     "height": 400
                 }
