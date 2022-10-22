@@ -14,12 +14,19 @@ import '../styles/components/layout.scss';
 import '../styles/components/scrollbar.scss';
 import '../styles/components/selection.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
     return (
         <MantineProvider theme={{
                 colorScheme: 'dark',
                 colors: {
-                    // override dark colors to change them for all components
+                    // Override dark colors to change them for all components
+                    // Переопределение темных цветов для изменения их для всех компонентов
+
+                    // Later I will add a theme switcher
+                    // Позже я добавлю переключатель темы
+
+                    // Not all colors are overriden from mantine.dev sample
+                    // Не все цвета переопределены из примера mantine.dev
                     dark: [
                       '#C1C2C5',
                       '#acaebf',
@@ -40,7 +47,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <RouterTransition />
             <NotificationsProvider>
                 <Head>
-                    <title>KAI Superset</title>
+                    <title>Суперсет КАИ</title>
                 </Head>
                 <Layout>
                     <Component {...pageProps}/>
@@ -49,5 +56,3 @@ function MyApp({ Component, pageProps }: AppProps) {
         </MantineProvider>
     );
 }
-
-export default MyApp;

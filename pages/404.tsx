@@ -1,10 +1,21 @@
 // Components
 // Компоненты
 import { useMediaQuery } from "@mantine/hooks";
-import { Text, Container, Divider } from "@mantine/core";
+import { Container, Divider, Text } from "@mantine/core";
+
+// Why not use SCSS/SASS modules?
+// I want this file to be clean, without any dependencies.
+// Почему бы не использовать SCSS/SASS модули?
+// Я хочу, чтобы этот файл был чистым, без каких-либо зависимостей.
 
 export default function NotFound() {
 
+    // Media query
+    // Sets width of Container with text
+    // to 100% if mobile width is less than 650px
+    // Медиа квери
+    // Устанавливает ширину контейнера с текстом
+    // на 100%, если ширина мобильного устройства меньше 650px
     const matches = useMediaQuery("(max-width: 650px)");
     const holder = matches ? {
         width: "100%",

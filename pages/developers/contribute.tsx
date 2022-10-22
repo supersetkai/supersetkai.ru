@@ -1,10 +1,16 @@
-import styles from "../../styles/modules/pages/developers/contribute.module.scss";
-import contributeConfig from "../../configs/pages/developers/contribute.json";
-
-import { Container, Text, Card, Button, Group } from "@mantine/core";
+// Components
+// Компоненты
+import { Button, Card, Container, Group, Text } from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
 import OpenInNewSharpIcon from '@mui/icons-material/OpenInNewSharp';
 import Link from "next/link";
+
+// SCSS/SASS
+import styles from "../../styles/modules/pages/developers/contribute.module.scss";
+
+// Configs
+// Конфиги
+import contributeConfig from "../../configs/pages/developers/contribute.json";
 
 function AppCard() {
     return (
@@ -19,7 +25,7 @@ function AppCard() {
             </Text>
 
             {contributeConfig.card.button.show ? (
-                <Link href="https://forms.gle/xNcodKz9qvUJMejY6" passHref>
+                <Link href={contributeConfig.card.link} passHref>
                     <Button
                         component="a"
                         target="_blank"

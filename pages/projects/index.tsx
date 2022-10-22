@@ -1,8 +1,15 @@
+// Components
+// Компоненты
+import { Button, Container, Divider, Group, Text } from "@mantine/core";
+import { Prism } from '@mantine/prism';
 import Image from "next/image";
 import Link from "next/link";
-import { Container, Group, Text, Button, Divider } from "@mantine/core";
-import { Prism } from '@mantine/prism';
+
+// SCSS/SASS
 import styles from "../../styles/modules/pages/projects/index.module.scss";
+
+// Configs
+// Конфиги
 import indexConfig from "../../configs/pages/projects/index.json";
 
 function ButtonGen(props: any) {
@@ -46,6 +53,8 @@ function ProjectGen(props: any) {
 
     const ShowCaseSide = (
         <Container className={styles.showCase}>
+            {/* Checking all types: code/image */}
+            {/* Проверка всех типов: код/изображение */}
             {props.item.showCase.type === "code" ? (
                 <Prism
                     language={props.item.showCase.code.language}
@@ -66,6 +75,8 @@ function ProjectGen(props: any) {
         </Container>
     );
 
+    // A lot easier to read in my opinion
+    // Намного легче в прочтении по-моему мнению
     if (indexConfig.projects.indexOf(props.item) % 2 == 1) {
         return (
             <Container className={styles.projects}>
@@ -103,7 +114,5 @@ function Projects() {
 }
 
 export default function Index() {
-    return (
-        <Projects />
-    )
+    return <Projects />
 }

@@ -1,6 +1,12 @@
+// Serverside
+// Часть сервера
 import { readFileSync } from "fs";
-import { Text, Container } from "@mantine/core";
 
+// Components
+// Компоненты
+import { Container, Text } from "@mantine/core";
+
+// SCSS/SASS
 import styles from "../../styles/modules/pages/developers/license.module.scss";
 
 export default function License(props: any) {
@@ -14,6 +20,10 @@ export default function License(props: any) {
 }
 
 export function getServerSideProps() {
+    // props.license is a license text
+    // readFileSync cannot be used inside non-serverside function
+    // props.license - это текст лицензии
+    // readFileSync не может быть использован внутри не-серверной функции
     return {
         props: {
             license: readFileSync('./LICENSE', 'utf-8')

@@ -1,7 +1,13 @@
+// Components
+// Компоненты
 import { Container, Table, Accordion, Text, Avatar, Divider } from "@mantine/core";
 import Link from "next/link";
 
+// SCSS/SASS
 import styles from "../styles/modules/pages/about-us.module.scss";
+
+// Configs
+// Конфиги
 import aboutUsConfig from "../configs/pages/about-us.json";
 
 function Tables(props: any) {

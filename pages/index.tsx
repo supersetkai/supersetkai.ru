@@ -1,15 +1,31 @@
-import styles from "../styles/modules/pages/index.module.scss";
-
-import { Card, Text, Badge, Button, Group, Grid } from "@mantine/core";
+// Components
+// Компоненты
+import { Badge, Button, Card, Container, Grid, Group, Text } from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
 import EastSharpIcon from '@mui/icons-material/EastSharp';
 import Link from "next/link";
 import Image from "next/future/image";
 
+// SCSS/SASS
+import styles from "../styles/modules/pages/index.module.scss";
+
+// Configs
+// Конфиги
 import indexConfig from "../configs/pages/index.json";
 
+// Logo
+// Лого
 import text from "../public/media/logo/superset-text.png";
 
+
+// Notification:
+// Requires checking typeof window
+// in order not to get an error
+// as next runs on both server side and client side
+// Уведомление:
+// Требует проверки typeof window
+// для того, чтобы не получить ошибку
+// так как next работает как на стороне сервера, так и на стороне клиента
 if (typeof window != 'undefined') {
     setTimeout(() => showNotification({
         title: "Вебсайт в разработке",
@@ -24,7 +40,7 @@ if (typeof window != 'undefined') {
 }
 
 function ButtonGen(props: any) {
-    const arrow: any = props.item.arrow ? <EastSharpIcon /> : "";
+    const arrow: JSX.Element = props.item.arrow ? <EastSharpIcon /> : <></>;
     return (
         <Link href={props.item.link} passHref>
             <Button
@@ -84,16 +100,15 @@ function Cards() {
     ));
 
     return (
-        <Grid columns={3} grow className={styles.grid}>
+        <Grid columns={3} className={styles.grid} grow>
             {cards}
         </Grid>
     );
 }
 
-function Landing() {
-
+export default function Home() {
     return (
-        <div id={styles.landingContainer}>
+        <Container id={styles.landingContainer} fluid>
             <Image
                 src={text}
                 alt="Text"
@@ -106,10 +121,6 @@ function Landing() {
                 height={512}
             />
             <Cards />
-        </div>
-    )
-}
-
-export default function Home() {
-    return <Landing />;
+        </Container>
+    );
 }
